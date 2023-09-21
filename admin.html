@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingdom Soldiers</title>
+    <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300&display=swap" 
+    rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+</head>
+<body>
+
+
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>           
+                <li><a href="blog.html">BLOG</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="images/menu.png" id="menu">
+    </div>
+
+    <!--blog page content-->
+
+     
+    <section class="blog-content">
+        <div class="">
+            <div class="blog-left">
+                <h2>Kingdom soldiers Ministerial College</h2>
+                <div class="comment-box">
+                    <h3>Edit Blog Post</h3>                  
+                    <form id="form" class="comment-form">
+                        <input type="file" id="new-image" placeholder="Upload Image">
+                        <input type="text" id="new-title" placeholder="Enter Title">
+                        <textarea rows="10" id="new-page" placeholder="Enter Paragraph"></textarea> 
+                        <button type="submit" id="submit" class="hi-btn red-btn" >Post</button>  
+                    </form>    
+                </div>  
+            </div> 
+            <button class="logout-btn">Logout</button>   
+        </div>
+    </section> 
+    <!--footer-->
+
+    <section id="footer">
+        <div class="social-links">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-youtube-play"></i>
+            <p>Copyright Henry @RoundwoodDigital print</p>
+        </div>
+    </section>
+
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px";
+
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                menu.src = "images/close.png"
+            }
+            else{
+                sideNav.style.right = "-250px";
+                menu.src = "images/menu.png"
+            }
+        }
+
+        var scroll = new SmoothScroll('a[href*="#"]', {
+	      speed: 1000,
+	       speedAsDuration: true
+        });
+    </script>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+</body>
+</html>                                                             
